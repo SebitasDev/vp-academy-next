@@ -6,7 +6,7 @@ import { Courses } from "@/types/Courses";
 
 export default async function Pltaform_view({ params, }: {params: { id: string };}) {
   
-  const { id } = await params;
+  const { id } = params;
 
   if (!id) {
     throw new Error("No se ha encontrado el id de la plataforma");
